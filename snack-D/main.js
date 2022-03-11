@@ -21,7 +21,7 @@ const animals =    [
 },
 { 
     nome: 'orso', 
-    famiglia: 'prova', 
+    famiglia: 'ursidae', 
     classe: 'mammiferi' 
 },
 ];

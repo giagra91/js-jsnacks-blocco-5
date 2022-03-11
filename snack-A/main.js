@@ -10,7 +10,7 @@ const player = {
 let playerCode = "";
 
 const letters = `ABCDEFGHIJKLMNOPQRSTUVZ`;
-const numbers = `01233456789`;
+const numbers = `0123456789`;
 for (let i = 0; i < 3; i++){
     playerCode += letters.charAt(Math.floor(Math.random() * letters.length));
     playerCode += numbers.charAt(Math.floor(Math.random() * numbers.length));

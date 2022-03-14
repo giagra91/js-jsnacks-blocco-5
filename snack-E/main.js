@@ -36,10 +36,9 @@ const people = [
 },
 ];
 
-people.forEach((element) => {
-    if (element.età > 18){
-        console.log(`${element.nome} ${element.cognome} può guidare, poiché ha ${element.età} anni`);
-    } else {
-        console.log(`${element.nome} ${element.cognome} non può guidare, poiché ha ${element.età} anni`);
-    }
-})
+const driveCheck = people.map((element) => {
+    let driveAge = (element.età >= 18) ?  `può guidare poiché ha ${element.età} anni`: `non può guidare poiché ha ${element.età} anni`;
+    return `${element.nome} ${element.cognome} ` + driveAge;
+    
+});
+console.log(driveCheck)
